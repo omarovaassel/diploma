@@ -1,0 +1,96 @@
+/* LOGIN PAGE */
+@font-face {
+    font-family: 'Gordita Light';
+    src: url('fonts/Gordita Light.woff') format('woff');
+}
+body {
+    font-family: 'Gordita Light';
+}
+#login_window {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #9dd9d2;
+    font-family: 'Gordita Light';
+    font-size: 10px;
+}
+.login-content {
+    background-color: #fefefe;
+    margin: 10% auto; /* 15% сверху и по центру */
+    padding: 20px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    width: 300px;
+}
+img {
+    margin-left: 80px;
+}
+#btn_login {
+    width: 280px;
+    /*display: none;*/
+    border: 1px solid #F1E7E8;
+    border-radius: 10rem;
+}
+#btn_get_code, #registration {
+    width: 280px;
+    border: 1px solid #F1E7E8;
+    border-radius: 10rem;
+}
+#btn_shopping {
+    width: 255px;
+    border: 1px solid #5AAAA0;
+    border-radius: 10rem;
+    padding: 5px;
+    background-color: #5AAAA0;
+    color: white;
+}
+#code, #name, #email, #password, #login_after_authorization {
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid #F1E7E8;
+    border-radius: 10rem;
+}
+
+#name_block, #code_block,
+#btn_get_code, #btn_registration,
+#login_after_authorization,
+#code_wrong {
+    display: none;
+}
+#login_text, #btn_shopping {
+    display: none;
+    text-align: center;
+}
+#full_input, #login_wrong {
+    display: none;
+    text-align: center;
+}
+.form_wrapper {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+    border-radius: 3px;
+}
+.form-row {
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px;
+}
+.form-row > label {
+    padding: 5px 1px 5px 0;
+    flex: 1;
+}
+.form-row > input {
+    flex: 2;
+}
+.form-row > input, .form-row > button {
+    padding: 5px;
+}
+.form-row > button {
+    background: gray;
+    color: white;
+    border: 0;
+    flex: 2;
+}
